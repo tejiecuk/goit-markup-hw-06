@@ -831,6 +831,7 @@ body {
 }
 
 .modal {
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -867,12 +868,12 @@ body {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
+  
   transition: color var(--trns-effect);
 }
-.close-btn:hover,
-.close-btn:focus {
-  color: var(--primary-bgr);
+.close-btn:focus,  
+.close-btn:hover {
+  fill: var(--logo-color);
 }
 /* modal form */
 
@@ -912,10 +913,15 @@ body {
   border-radius: 4px;
   transition: var(--trns-effect);
 }
+
 .form-input:focus {
-  color: var(--logo-color);
   border-color: var(--logo-color);
 }
+.form-input:focus + .form-icon{
+  fill: var(--logo-color);
+  border-color: var(--logo-color);
+}
+
 .form-icon {
   position: absolute;
   top: 14px;
