@@ -647,7 +647,7 @@ body {
   width: 358px;
   height: 50px;
   outline: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primary-bgr);
   padding-left: 15px;
 
   background-color: var(--secondary-bgr);
@@ -670,12 +670,11 @@ body {
 .sub-btn {
   position: relative;
   min-width: 200px;
-  max-height: 50px;
   padding-top: 10px;
   padding-left: 28px;
   padding-right: 62px;
   padding-bottom: 10px;
-  border-color: transparent;
+  border: 1px transparent;
   margin-left: 12px;
  
 
@@ -821,7 +820,7 @@ body {
 
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -899,13 +898,15 @@ body {
 .form-icon-input{
   padding: 0;
   position: relative;
+  margin-bottom: 10px;
+
 }
 .form-input {
   display: flex;
+  margin-bottom: 0;
 
   outline: transparent;
   width: 100%;
-  margin-bottom: 28px;
   padding-left: 42px;
   color: var(--color-text);
 
@@ -916,7 +917,7 @@ body {
 }
 .form-icon {
   position: absolute;
-  top: 14px;
+  top: 11px;
   left: 15px;
   transition: var(--trns-effect);
 }
@@ -995,6 +996,8 @@ body {
 .form-agreement-text {
   user-select: none;
   margin-left: 7px;
+
+  color: #757575;
 }
 .form-agreement-link {
   color: var(--logo-color);
