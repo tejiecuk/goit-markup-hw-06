@@ -892,15 +892,17 @@ body {
 } */
 
 .form-field {
+  display: block;
   flex-basis: 208px;
   position: relative;
+  margin-bottom: 10px;
 }
-.form-icon-input{
+/* .form-icon-input{
   padding: 0;
   position: relative;
   margin-bottom: 10px;
 
-}
+} */
 .form-input {
   display: flex;
   margin-bottom: 0;
@@ -917,7 +919,7 @@ body {
 }
 .form-icon {
   position: absolute;
-  top: 11px;
+  top: 29px;
   left: 15px;
   transition: var(--trns-effect);
 }
